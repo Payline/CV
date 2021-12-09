@@ -3,10 +3,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -33,17 +29,18 @@ background: rgba(0, 0, 0, 0.4);
 }
 
 .intro__suptitle {
+  margin: 5px 0 0;
   font-size: 60px;
   color: #e4d0cf;
   font-family: 'Kaushan Script', cursive;
   }
 
 .intro__title {
+  margin: 20px 0;
   color: #fff;
   font-size: 100px;
   font-weight: bold;
   text-align: left;
-  line-height: 1;
 }
 
 .intro__text {
@@ -52,6 +49,7 @@ background: rgba(0, 0, 0, 0.4);
   font-size: 20px;
   color: #e4d0cf;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .intro .container a{
