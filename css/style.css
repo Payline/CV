@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/intro.jpg") center 
+  no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.intro__inner {
+width: 100%;
+max-width: 820px;
+margin: 0;
+background: rgba(0, 0, 0, 0.4);
+}
+
+.intro__suptitle {
+  font-size: 60px;
+  color: #e4d0cf;
+  font-family: 'Kaushan Script', cursive;
+  }
+
+.intro__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+}
+
+.intro__text {
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #e4d0cf;
+  text-align: center;
+}
+
+.intro .container a{
+  text-decoration: none;
+  margin: 12px 4px;
+  width: 28px;
+  height: 28px;
+  border: solid 1px transparent;
+  border-radius: 25% 10%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.intro .container a:hover {
+  background-color: #f3e9e8;
+  border: solid 1px #f3e9e8;
+  transition: 0.1s;
+}
+
+.intro__button {
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.intro__button:hover {
+  color: #cc9a98;
+  transition: 0.1s;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+} 
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.nav{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.1s linear;
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-weight: bold;
+}
+
+.nav__link:after {
+  display: block;
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #cc9a98;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+  color: #cc9a98;
+}
+
+.nav__link:hover:after {
+opacity: 1;
+}
+
+.about {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .container h3 {
+  text-align: center;
+  color: #505d68;
+  font-weight: bold;
+  font-size: 45px;
+  padding: 40px 0;
+}
+
+.about .container .d-flex {
+  float: left;
+  width: 40%;
+}
+
+.about .container .d-flex img{
+max-width: 385px;
+border: 3px dashed #cc9a98;
+}
+
+.about .container .item {
+float: right;
+width: 60%;
+padding-left: 40px;
+padding-right: 38px;
+text-align: left;
+}
+
+.about .container .item h5{
+  padding-bottom: 32px;
+  font-size: 15px;
+  color: #e4d0cf;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.about .container .item p {
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #e4d0cf;
+  padding-bottom: 58px;
+}
+
+.about .container .item a{
+  text-decoration: none;
+  margin: 20px 4px;
+  width: 28px;
+  height: 28px;
+  border: solid 1px transparent;
+  border-radius: 25% 10%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.about .container .item a:hover {
+  background-color: #f3e9e8;
+  border: solid 1px #f3e9e8;
+  transition: 0.1s;
+}
+
+.about__button {
+  font-family: 'Kaushan Script', cursive;
+  color: #e4d0cf;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about__button:hover {
+  color: #cc9a98;
+  transition: 0.1s;
+}
+
+.skills {
+  border: 3px 0 solid #cc9a98;
+}
+
+.skills__percent {
+  background-color: aqua;
+  float: left;
+  width: 40%;
+  position: absolute;
+}
+
+.progress__bar__1 {
+  width: calc(100% - 14px);
+}
+
+.progress__bar__2 {
+  width: calc(100% - 14px);
+}
+
+.progress__bar__3 {
+  width: calc(70% - 14px);
+}
+
+.progress__bar__4 {
+  width: calc(10% - 14px);
+}
+
+
+
+
+
+.skills__text {
+  background-color: #cc9a98;
+  float: right;
+  width: 60%;
+  position: relative;
+}
+
+.skills__text .ul li {
+  list-style-type: none;
+ }
+
+ .skills__text .ul li::before {
+  color: #cc9a98;
+  content: "֍";
+  padding-right: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
