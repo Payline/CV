@@ -46,10 +46,35 @@ background: rgba(0, 0, 0, 0.4);
 .intro__title {
   margin: 20px 0;
   color: #fff;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   text-align: left;
+  overflow: hidden;
+  border-right: 0.15em solid #cc9a98;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end) infinite,
+  cursor-blink 0.75s step-end infinite;
 }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor-blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #cc9a98;
+    }
+  }
 
 .intro__text {
   font-family: 'M PLUS Code Latin', sans-serif;
@@ -155,6 +180,9 @@ opacity: 1;
 .intro .scroll_down {
   display: inline-block;
 animation: scrollDown 2s ease infinite;
+text-decoration: none;
+margin-top: 100px;
+margin-left: 50%;
 }
 
 @keyframes scrollDown{
@@ -173,7 +201,6 @@ animation: scrollDown 2s ease infinite;
   color: #cc9a98;
   width: 25px;
   display: block;
-  text-decoration: none;
 }
 
 .about {
@@ -201,10 +228,8 @@ text-align: left;
 }
 
 .about .container .item h5{
-  padding-bottom: 32px;
-  font-size: 15px;
+  font-size: 20px;
   color: #42464c;
-  font-family: 'Kaushan Script', cursive;
 }
 
 .about .container .item p {
@@ -361,6 +386,11 @@ position: absolute;
 top: 18px;
  }
 
+ .experince .timeline .timeline-item-inner .icon:hover{
+   background-color: #cc9a98;
+   color: #fff;
+ }
+
  .experince .timeline .timeline-item:nth-child(odd) .icon {
 right: -70px;
  }
@@ -450,11 +480,13 @@ padding: 8px;
 }
  
 .footer-distributed .footer-links a{
+  font-size: 15px;
+  font-weight: bold;
  display:inline-block;
  line-height: 1.8;
  text-decoration: none;
  vertical-align: top;
- margin: 0 5px;
+ margin: 0 2px;
  color: #fff;
  text-decoration: none;
  transition: color 0.1s linear;
@@ -478,40 +510,40 @@ padding: 8px;
 }
  
 .footer-distributed .footer-center i{
- background-color:  #33383b;
- color: #ffffff;
- font-size: 25px;
- width: 38px;
- height: 38px;
+ background-color:  #e4d0cf;
+ color: #42464c;
+ font-size: 15px;
+ width: 30px;
+ height: 30px;
  border-radius: 50%;
  text-align: center;
- line-height: 42px;
+ line-height: 30px;
  margin: 10px 15px;
  vertical-align: middle;
 }
+
+.footer-distributed .footer-center i:hover{
+  background-color: #cc9a98;
+  color: #fff;
+}
  
 .footer-distributed .footer-center i.fa-envelope{
- font-size: 17px;
- line-height: 38px;
+ font-size: 15px;
+ line-height: 30px;
 }
  
 .footer-distributed .footer-center p{
  display: inline-block;
- color: #ffffff;
+ color: #fff;
  vertical-align: middle;
  margin:0;
-}
- 
-.footer-distributed .footer-center p span{
- display:block;
- font-weight: normal;
- font-size:14px;
- line-height:2;
+ font-size: 15px;
 }
  
 .footer-distributed .footer-center p a{
- color:  #5383d3;
- text-decoration: none;;
+ color:  #fff;
+ text-decoration: none;
+ font-size: 15px;
 }
  
 .footer-distributed .footer-right{
@@ -520,18 +552,18 @@ padding: 8px;
  
 .footer-distributed .footer-company-about{
  line-height: 20px;
- color:  #92999f;
- font-size: 13px;
+ color:  #fff;
+ font-size: 10px;
  font-weight: normal;
  margin: 0;
 }
  
 .footer-distributed .footer-company-about span{
  display: block;
- color:  #ffffff;
- font-size: 14px;
+ color:  #e4d0cf;
+ font-size: 15px;
  font-weight: bold;
- margin-bottom: 20px;
+ margin-bottom: 5px;
 }
  
 .footer-distributed .footer-icons{
@@ -545,24 +577,19 @@ padding: 8px;
  cursor: pointer;
  background-color:  #33383b;
  border-radius: 2px;
- 
  font-size: 20px;
  color: #ffffff;
  text-align: center;
  line-height: 35px;
- 
  margin-right: 3px;
  margin-bottom: 5px;
 }
- 
  
 @media (max-width: 880px) {
  
  .footer-distributed{
  font: bold 14px sans-serif;
- 
  }
- 
  .footer-distributed .footer-left,
  .footer-distributed .footer-center,
  .footer-distributed .footer-right{
@@ -571,15 +598,12 @@ padding: 8px;
  margin-bottom: 40px;
  text-align: center;
  }
- 
  .footer-distributed .footer-center i{
  margin-left: 0;
  }
  .main {
  line-height: normal;
- font-size: auto;
  }
- 
 }
 
 
