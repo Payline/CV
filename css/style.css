@@ -203,7 +203,7 @@ margin-left: 50%;
   display: block;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
 
   h3 {
     text-align: center;
@@ -326,7 +326,7 @@ text-align: left;
   transition: 0.1s;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
 
   .about {
     border-top: 5px solid #e4d0cf;
@@ -420,7 +420,7 @@ position: absolute;
   padding-right: 50px;
  }
 
- @media (max-width: 400px) {
+ @media (max-width: 415px) {
   .skills {
     border-top: 5px solid #e4d0cf;
     padding-bottom: 10px;
@@ -502,7 +502,7 @@ right: -70px;
    left: -70px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
 .experince {
   padding-bottom: 10px;
   border-top: 5px solid #e4d0cf;
@@ -735,7 +735,7 @@ padding: 8px;
  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
 
   .footer-distributed {
     padding: 5px 0;
