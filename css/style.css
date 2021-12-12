@@ -203,6 +203,63 @@ margin-left: 50%;
   display: block;
 }
 
+@media (max-width: 400px) {
+
+  h3 {
+    text-align: center;
+    color: #505d68;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+  .header {
+    padding: 2px 0;
+  }
+  .header__logo {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .nav__link {
+    font-size: 10px;
+    margin: 5px 2px;
+  }
+
+  .intro__suptitle {
+    font-size: 20px;
+  }
+  .intro__title {
+    font-size: 35px;
+    margin: 5px 0;
+  }
+  .intro__text {
+    font-size: 10px;
+    text-align: left;
+    margin: 5px 10px;
+  }
+  .intro {
+    height: 800px;
+  }
+
+  .intro .container a{
+    margin: 0px;
+    line-height: 15px;
+  }
+  .intro__button {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .intro .scroll_down {
+    margin-top: 30px;
+  }
+}
+
 .about {
   width: 100%;
   margin: 0 auto;
@@ -269,6 +326,39 @@ text-align: left;
   transition: 0.1s;
 }
 
+@media (max-width: 400px) {
+
+  .about {
+    border-top: 5px solid #e4d0cf;
+    padding-bottom: 10px;
+  }
+
+  .about .container .d-flex img{
+    width: 200px;
+    height: 200px;
+    border: 1px dashed #cc9a98;
+  }
+  .about .container .item {
+    padding-left: 5px;
+    padding-right: 2px;
+}
+.about .container .item h5 {
+  font-size: 10px;
+  margin: 0;
+}
+.about .container .item p {
+  font-size: 10px;
+  padding-bottom: 2px;
+}
+.about .container .item a {
+
+}
+.about__button {
+  font-size: 15px;
+  padding: 2px;
+}
+}
+
 .skills {
   border-top: 10px solid #e4d0cf;
   padding-bottom: 80px;
@@ -328,6 +418,19 @@ position: absolute;
   color: #cc9a98;
   content: "֍";
   padding-right: 50px;
+ }
+
+ @media (max-width: 400px) {
+  .skills {
+    border-top: 5px solid #e4d0cf;
+    padding-bottom: 10px;
+}
+.skills__percent .skill-item {
+  padding: 10px 5px;
+}
+.skills__text ul li {
+  font-size: 10px;
+}
  }
 
  .experince {
@@ -397,6 +500,28 @@ right: -70px;
 
  .experince .timeline .timeline-item:nth-child(even) .icon {
    left: -70px;
+}
+
+@media (max-width: 400px) {
+.experince {
+  padding-bottom: 10px;
+  border-top: 5px solid #e4d0cf;
+}
+.experince .timeline .timeline-item-inner {
+  padding: 10px;
+}
+.experince .timeline .timeline-item-inner span {
+font-size: 10px;
+}
+.experince .timeline .timeline-item-inner h4 {
+  font-size: 10px;
+}
+.experince .timeline .timeline-item-inner h5 {
+  font-size: 10px;
+}
+.experince .timeline .timeline-item-inner p {
+  font-size: 10px;
+}
 }
 
 .footer-distributed {
@@ -605,6 +730,26 @@ padding: 8px;
  line-height: normal;
  }
 }
+
+@media (max-width: 400px) {
+  .footer-distributed .container {
+    max-width: 400px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline;
+width: 100%;
+margin-bottom: 5px;
+text-align: center;
+}
+.footer-distributed .footer-center i{
+  margin-left: 0;
+  }
+  .main {
+  line-height: normal;
+  }
 
 
 
